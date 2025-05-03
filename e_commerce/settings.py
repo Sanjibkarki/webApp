@@ -24,12 +24,12 @@ from dotenv import load_dotenv
 SECRET_KEY = os.getenv("SECRETKEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 load_dotenv()
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['nabinweb.centralindia.cloudapp.azure.com']
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 EMAIL_HOST = 'smtp.gmail.com'
