@@ -25,8 +25,8 @@ def send_feedback_email_task(number,obj):
         message += f"- {i.PName} {i.PPrice} {i.Size} {i.Quantity}\n"
     send_mail(
         "Order Details",
-        message,"sanjeeb123ui@gmail.com",
-        ["sanjeevkarki729@gmail.com",],
+        message,"request.user.email",
+        ["sanjeeb123ui@gmail.com",],
         fail_silently=False,
     )
     
